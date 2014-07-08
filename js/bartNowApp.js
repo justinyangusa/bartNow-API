@@ -68,7 +68,7 @@ bartNowApp.directive("bartMap", function () {
 
           //Setup the default map options, and set your API key....
           var mapOptions = {
-            credentials: "YOUR API KEY GOES HERE", //get your api key from http://www.bingmapsportal.com 
+            credentials: "ArLpBmTsE3UetSNP8i7fZpyhcqeP4QEHdO6kCjDQrVJsy3u-Ow_tHIp8IZmPC9QG", //get your api key from http://www.bingmapsportal.com 
             mapTypeId: Microsoft.Maps.MapTypeId.road,
             zoom: 14,
             theme: new Microsoft.Maps.Themes.BingTheme(),
@@ -185,8 +185,8 @@ bartNowApp.controller("TrainsCtrl", ['$scope', '$http', '$routeParams', function
 
   $scope.getStations = function () {
     var stationsUrl = 'data/stations.json';
-    //var stationsUrl = 'http://bartnowapidemo.azurewebsites.net/api/etd/' + $scope.stationAbbr;
-    //var stationsUrl = 'http://YOURWEBSITENAME.azurewebsites.net/api/etd/' + $scope.stationAbbr;
+    //var stationsUrl = './backend/api/etd/' + $scope.stationAbbr;
+    //var stationsUrl = './backend//api/etd/' + $scope.stationAbbr;
 
     //Go get all the stations from the data source
     $http.get(stationsUrl).success(function (result) {
